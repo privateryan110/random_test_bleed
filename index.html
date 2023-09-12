@@ -1,0 +1,41 @@
+<!--site template-->
+<!doctype html>
+<html>
+  <head>
+    <!--p5 library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <!--p5 sound library -->
+    <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.sound.min.js></script>
+    <!-- ccapture library -->
+    <script src = "package/build/CCapture.all.min.js"></script>
+    
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+  </head>
+  <body>
+    <!--For the canvas-->
+    <div id = "main"></div>
+      
+    <!--Menu-->
+    <div id = "menu">
+        <!-- Pause / play button -->
+        <div id = "pause" onclick = "pause()">
+            <img id = "play_or_pause" src = "assets/pause_button.png">
+        </div>
+        
+        <!-- Mode button -->
+        <div id = "mode" onclick = "mode()">Mode 0</div>
+        
+        <!-- Record Button -->
+        <div id = "record" onclick = "record()">
+            <img id = "recording" src = "assets/recording_off.png">
+        </div>
+        
+        <!--Restart -->
+        <div id = "restart" onclick = "restart()">
+            <img id = "restartButton" src = "assets/reset.png">
+        </div>
+    </div>
+  </body>
+</html>
